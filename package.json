@@ -1,35 +1,25 @@
 {
-  "name": "invariant",
-  "version": "2.2.4",
-  "description": "invariant",
+  "name": "@react-dnd/invariant",
+  "version": "1.0.1",
+  "description": "invariantx",
   "keywords": [
     "test",
     "invariant"
   ],
   "license": "MIT",
   "author": "Andres Suarez <zertosh@gmail.com>",
-  "files": [
-    "browser.js",
-    "invariant.js",
-    "invariant.js.flow"
-  ],
-  "repository": "https://github.com/zertosh/invariant",
+  "repository": "https://github.com/darthtrevino/invariant",
   "scripts": {
-    "test": "NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js"
-  },
-  "dependencies": {
-    "loose-envify": "^1.0.0"
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "watch": "tsdx watch",
+    "lint": "tsdx lint"
   },
   "devDependencies": {
-    "browserify": "^11.0.1",
-    "flow-bin": "^0.67.1",
-    "tap": "^1.4.0"
+    "@types/jest": "^24.0.23",
+    "tsdx": "^0.11.0"
   },
-  "main": "invariant.js",
-  "browser": "browser.js",
-  "browserify": {
-    "transform": [
-      "loose-envify"
-    ]
-  }
+  "main": "dist/index.js",
+  "module": "dist/invariant.esm.js",
+  "typings": "dist/index.d.ts"
 }
