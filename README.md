@@ -1,10 +1,12 @@
 # invariant
 
-[![Build Status](https://travis-ci.org/zertosh/invariant.svg?branch=master)](https://travis-ci.org/zertosh/invariant)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Freact-dnd%2Finvariant%2Fbadge&style=flat)](https://actions-badge.atrox.dev/react-dnd/invariant/goto)
 
 A mirror of Facebook's `invariant` (e.g. [React](https://github.com/facebook/react/blob/v0.13.3/src/vendor/core/invariant.js), [flux](https://github.com/facebook/flux/blob/2.0.2/src/invariant.js)).
 
 A way to provide descriptive errors in development but generic errors in production.
+
+## Note: This has been forked by react-dnd for ESM and TypeScript support
 
 ## Install
 
