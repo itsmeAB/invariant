@@ -1,6 +1,7 @@
 {
   "name": "@react-dnd/invariant",
   "version": "1.0.1",
+  "private": false,
   "description": "invariantx",
   "keywords": [
     "test",
