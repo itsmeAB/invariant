@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "author": "Andres Suarez <zertosh@gmail.com>",
-  "repository": "https://github.com/darthtrevino/invariant",
+  "repository": "https://github.com/react-dnd/invariant",
   "scripts": {
     "build": "tsdx build",
     "test": "tsdx test",
