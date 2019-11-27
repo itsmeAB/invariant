@@ -1,4 +1,4 @@
-import invariant from '../src';
+import { invariant } from '../src';
 
 describe('development mode', () => {
   const OLD_ENV = process.env;
