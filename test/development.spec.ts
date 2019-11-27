@@ -1,10 +1,10 @@
-import invariant from '../src'
+import invariant from '../src';
 
-describe("development mode", () => {
+describe('development mode', () => {
   const OLD_ENV = process.env;
 
   beforeEach(() => {
-    jest.resetModules() // this is important - it clears the cache
+    jest.resetModules(); // this is important - it clears the cache
     process.env = { ...OLD_ENV };
     delete process.env.NODE_ENV;
   });
@@ -13,16 +13,16 @@ describe("development mode", () => {
     process.env = OLD_ENV;
   });
 
-  it("works", () => {
-    process.env.NODE_ENV = 'development'
+  it('works', () => {
+    process.env.NODE_ENV = 'development';
 
     expect(function() {
-      invariant(true, "invariant message");
+      invariant(true, 'invariant message');
     }).not.toThrow();
 
     expect(function() {
-      invariant(false, "invariant message");
-    }).toThrow( /invariant message/);
+      invariant(false, 'invariant message');
+    }).toThrow(/invariant message/);
 
     expect(function() {
       (invariant as any)(true);
