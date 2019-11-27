@@ -9,11 +9,7 @@
  * will remain to ensure logic does not differ in production.
  */
 
-export function invariant(
-  condition: any,
-  format: string,
-  ...args: any[]
-) {
+export function invariant(condition: any, format: string, ...args: any[]) {
   if (process.env.NODE_ENV !== 'production') {
     if (format === undefined) {
       throw new Error('invariant requires an error message argument');
